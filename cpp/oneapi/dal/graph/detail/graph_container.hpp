@@ -23,4 +23,14 @@ namespace oneapi::dal::preview::detail {
 template <class T, class Allocator = std::allocator<T>>
 using graph_container = std::vector<T, Allocator>;
 
+template <typename Graph>
+typename Graph::pimpl& get_impl(Graph& graph) {
+    return graph.impl_;
+}
+
+template <typename Graph>
+const typename Graph::pimpl& get_impl(const Graph& graph) {
+    return graph.impl_;
+}
+
 } // namespace oneapi::dal::preview::detail

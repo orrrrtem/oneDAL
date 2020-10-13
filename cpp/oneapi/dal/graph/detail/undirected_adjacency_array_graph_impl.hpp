@@ -22,16 +22,6 @@
 
 namespace oneapi::dal::preview::detail {
 
-template <typename Graph>
-ONEAPI_DAL_EXPORT typename Graph::pimpl& get_impl(Graph& graph) {
-    return graph.impl_;
-}
-
-template <typename Graph>
-ONEAPI_DAL_EXPORT const typename Graph::pimpl& get_impl(const Graph& graph) {
-    return graph.impl_;
-}
-
 template <typename VertexValue = empty_value,
           typename EdgeValue = empty_value,
           typename GraphValue = empty_value,
