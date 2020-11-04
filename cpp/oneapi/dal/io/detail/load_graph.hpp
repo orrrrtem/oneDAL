@@ -20,6 +20,7 @@
 #include <fstream>
 
 #include "oneapi/dal/exceptions.hpp"
+#include "oneapi/dal/detail/common.hpp"
 #include "oneapi/dal/graph/detail/graph_container.hpp"
 #include "oneapi/dal/graph/detail/undirected_adjacency_array_graph_impl.hpp"
 #include "oneapi/dal/graph/graph_common.hpp"
